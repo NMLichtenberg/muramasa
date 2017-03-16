@@ -32,7 +32,3 @@ module Header
     find('h1').text
   end
 end
-
-
-
-end

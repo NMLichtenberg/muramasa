@@ -31,6 +31,7 @@ module Header
   def verify_page_heading
     find('h1').text
   end
+end
 
 
 

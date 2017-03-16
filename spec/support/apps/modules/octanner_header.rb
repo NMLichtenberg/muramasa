@@ -28,7 +28,7 @@ module Header
     click_link('Clients')
   end
 
-  def verify_page?
+  def verify_page_heading
     find('h1').text
   end
 

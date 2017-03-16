@@ -9,17 +9,17 @@ feature test_name.to_s, sauce: app.sauce do
     app.launch_app(app.url('OCT'))
     app.oct_landing_page.open_menu
     app.oct_landing_page.click_why_appreciate
-    expect(verify_page?).to eq 'elevate everything'
+    expect(verify_page_heading).to eq 'elevate everything'
     app.oct_landing_page.click_products
-    expect(verify_page?).to eq 'specificity matters'
+    expect(verify_page_heading).to eq 'specificity matters'
     app.oct_landing_page.click_why_choose_us
-    expect(verify_page?).to eq 'partner with excellence'
+    expect(verify_page_heading).to eq 'partner with excellence'
     app.oct_landing_page.click_insights
-    expect(verify_page?).to eq 'gain understanding'
+    expect(verify_page_heading).to eq 'gain understanding'
     app.oct_landing_page.click_institute
-    expect(verify_page?).to eq 'Institute'
+    expect(verify_page_heading).to eq 'Institute'
     app.oct_landing_page.click_clients
-    expect(verify_page?).to eq 'cultures of great work'
+    expect(verify_page_heading).to eq 'cultures of great work'
     app.close_all_windows
   end
 end

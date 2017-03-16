@@ -8,7 +8,7 @@ feature test_name.to_s, sauce: app.sauce do
 
     app.launch_app(app.url('OCT'))
     app.oct_landing_page.open_menu
-    app.oct_landing_page.click_why_choose_use
+    app.oct_landing_page.click_why_appreciate
     expect(verify_page?).to eq 'elevate everything'
     app.oct_landing_page.click_products
     expect(verify_page?).to eq 'specificity matters'

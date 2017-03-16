@@ -9,6 +9,8 @@ feature test_name.to_s, sauce: app.sauce do
     app.launch_app(app.url('GOOGLE'))
     app.google_landing_page.enter_search_text('Muramasa')
     app.google_landing_page.click_search
+    app.google_landing_page.click_search_result('Muramasa - Wikipedia')
+    app.google_landing_page.print_period
     app.close_all_windows
   end
 end

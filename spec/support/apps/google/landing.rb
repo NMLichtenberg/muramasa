@@ -9,4 +9,13 @@ class GoogleLandingPage < AutomationFramework::Utilities
     page.click_on 'Google Search'
   end
 
+  def click_search_result(result)
+    page.click_on result
+  end
+
+  def print_period
+    period = find(:xpath, "//a[contains(@href,'period')]").text
+    puts period
+  end
+
 end
